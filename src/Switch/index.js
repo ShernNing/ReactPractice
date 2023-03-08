@@ -40,4 +40,3 @@ export default Switch;
 
 // theme - b
 // setTheme - cvb
-// useTheme - d
