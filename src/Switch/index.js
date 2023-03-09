@@ -19,26 +19,29 @@
 
 
 import "./Styles.css";
-import {useTheme} from "../components/ThemeContext";
+import {DRTUseTheme} from "../components/ThemeContext";
 
-const Switch = () => {
-  const { b, toggleTheme } = useTheme();
+const GHJSwitch = () => {
+  const { bcvTheme, TGVToggleTheme } = DRTUseTheme();
   return (
     <label className="switch">
       <input
         type="checkbox"
-        checked={b === "light"}
-        onChange={toggleTheme}
+        checked={bcvTheme === "light"}
+        onChange={TGVToggleTheme}
         />
       <span className="slider round" />
     </label>
   );
 };
 
-export default Switch;
+export default GHJSwitch;
 
 
-// theme - b
-// setTheme - cvb
-// useTheme - d
-//
+// theme - bcvTheme
+// setTheme - cvbSetTheme
+// useTheme - DRTUseTheme
+// ThemeContext - abcThemeContext
+// Switch - GHJSwitch
+// toggleTheme -TGVToggleTheme
+// ThemeProvider - TMPThemeProvider

@@ -21,18 +21,28 @@
 
 import { createContext, useContext, useState } from "react";
 
-const a = createContext();
+const abcThemeContext = createContext();
 
-export const ThemeProvider = ({children}) => {
-  const [b, cvb] = useState("light");
+export const TMPThemeProvider = ({children}) => {
+  const [bcvTheme, cvbSetTheme] = useState("light");
 
   return (
-    <a.Provider 
-    value={{b, 
-    toggleTheme: () => cvb(b === "light" ? "dark" : "light")}}>
+    <abcThemeContext.Provider 
+    value={{bcvTheme, 
+    TGVToggleTheme: () => cvbSetTheme(bcvTheme === "light" ? "dark" : "light")}}>
       {children}
-    </a.Provider>
+    </abcThemeContext.Provider>
   )
 }
 
-export const useTheme = () => useContext(a);
+export const DRTUseTheme = () => useContext(abcThemeContext);
+
+
+
+// theme - bcvTheme
+// setTheme - cvbSetTheme
+// useTheme - DRTUseTheme
+// ThemeContext - abcThemeContext
+// Switch - GHJSwitch
+// toggleTheme -TGVToggleTheme
+// ThemeProvider - TMPThemeProvider

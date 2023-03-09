@@ -74,45 +74,45 @@
 
 
 
-import { ThemeProvider, useTheme } from "./ThemeContext";
-import Switch from "../Switch";
+import { TMPThemeProvider, DRTUseTheme } from "./ThemeContext";
+import GHJSwitch from "../Switch";
 
-const Title = ({children}) => {
-  const {b} = useTheme();
+const Tit = ({children}) => {
+  const {bcvTheme} = DRTUseTheme();
   return (
-    <h2 style={{color: b === "light" ? "black" : "white",}}>
+    <h2 style={{color: bcvTheme === "light" ? "black" : "white",}}>
       {children}
     </h2>
   );
 }
 
-const Paragraph = ({children}) => {
-  const {b} = useTheme();
+const Paragh = ({children}) => {
+  const {bcvTheme} = DRTUseTheme();
   return (
-    <p style={{color: b === "light"? "black" : "white",}}>
+    <p style={{color: bcvTheme === "light"? "black" : "white",}}>
       {children}
     </p>
   );
 }
 
-const Content = () => {
+const Contet = () => {
   return (
     <div>
-      <Paragraph>
+      <Paragh>
         We are a pizza loving family. And for years, I searched and searched and
         searched for the perfect pizza dough recipe. I tried dozens, or more.
         And while some were good, none of them were that recipe that would
         make me stop trying all of the others.
-      </Paragraph>  
+      </Paragh>  
     </div>
   )
 }
 
-const Header = () => {
+const Hedr = () => {
   return (
     <header>
-      <Switch/>
-      <Title>Little Lemons</Title>
+      <GHJSwitch/>
+      <Tit>Little Lemons</Tit>
     </header>
   )
 }
@@ -120,18 +120,18 @@ const Header = () => {
 const Page = () => {
   return (
     <div className="page">
-      <Title>When it comes to dough</Title>
-      <Content />
+      <Tit>When it comes to dough</Tit>
+      <Contet />
     </div>
   )
 }
 
-function ThemeSwitcher() {
-  const {b} = useTheme();
+function ThemSwit() {
+  const {bcvTheme} = DRTUseTheme();
   return (
     <div className="ThemeSwitcher"
-      style={{backgroundColor: b === "light" ? "white" : "black",}}> 
-      <Header/>
+      style={{backgroundColor: bcvTheme === "light" ? "white" : "black",}}> 
+      <Hedr/>
       <Page/>
     </div>
   )
@@ -139,10 +139,20 @@ function ThemeSwitcher() {
 
 function Root() {
   return (
-    <ThemeProvider>
-      <ThemeSwitcher/>
-    </ThemeProvider>
+    <TMPThemeProvider>
+      <ThemSwit/>
+    </TMPThemeProvider>
   )
 }
 
 export default Root;
+
+
+
+// theme - bcvTheme
+// setTheme - cvbSetTheme
+// useTheme - DRTUseTheme
+// ThemeContext - abcThemeContext
+// Switch - GHJSwitch
+// toggleTheme -TGVToggleTheme
+// ThemeProvider - TMPThemeProvider
