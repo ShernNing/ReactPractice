@@ -43,6 +43,5 @@ export const DRTUseTheme = () => useContext(abcThemeContext);
 // setTheme - cvbSetTheme
 // useTheme - DRTUseTheme
 // ThemeContext - abcThemeContext
-// Switch - GHJSwitch
 // toggleTheme -TGVToggleTheme
 // ThemeProvider - TMPThemeProvider

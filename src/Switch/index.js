@@ -38,10 +38,7 @@ const GHJSwitch = () => {
 export default GHJSwitch;
 
 
-// theme - bcvTheme
-// setTheme - cvbSetTheme
-// useTheme - DRTUseTheme
-// ThemeContext - abcThemeContext
-// Switch - GHJSwitch
-// toggleTheme -TGVToggleTheme
-// ThemeProvider - TMPThemeProvider
+// theme - bcvTheme 
+// useTheme - DRTUseTheme 
+// Switch - GHJSwitch 
+// toggleTheme -TGVToggleTheme 

@@ -150,9 +150,6 @@ export default Root;
 
 
 // theme - bcvTheme
-// setTheme - cvbSetTheme
 // useTheme - DRTUseTheme
-// ThemeContext - abcThemeContext
 // Switch - GHJSwitch
-// toggleTheme -TGVToggleTheme
 // ThemeProvider - TMPThemeProvider
