@@ -34,13 +34,13 @@ function UseStateCounter() {
 
   function decrementCount() {
     setState (prevState => {
-      return {...prevState, count: prevState.count - 1, theme: "green"}
+      return {...prevState, count: prevState.count - 1, theme: "red"}
     })
   }
 
   function incrementCount() {
     setState (prevState => {
-      return {...prevState, count: prevState.count +1}
+      return {...prevState, count: prevState.count +1, theme: "green"}
     })
   }
 
