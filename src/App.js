@@ -23,6 +23,8 @@ import Form from './components/Form';
 import FeedbackForm from './components/FeedbackForm';
 import RegistrationForm from './components/RegistrationForm';
 import ThemeSwitcher from './components/ThemeSwitcher';
+import UseState from './components/UseState';
+import Goals from './components/Goals';
 
 import './App.css';
 import {Routes, Route, Link} from 'react-router-dom'; //must import in Index.js and add broswerrouter//
@@ -119,6 +121,8 @@ function App() {
           <Form />
           <FeedbackForm/>
           <RegistrationForm/>
+          <UseState/>
+          <Goals/>
       </div>
     </div>
   );
