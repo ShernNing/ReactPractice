@@ -24,7 +24,12 @@ import FeedbackForm from './components/FeedbackForm';
 import RegistrationForm from './components/RegistrationForm';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import UseState from './components/UseState';
+import UseStateCounter from './components/UseStateCounter';
 import Goals from './components/Goals';
+import StateWithAComponent from './components/StateWithAComponent';
+import UseEffectHook from './components/UseEffectHook';
+import UseEffectClick from './components/UseEffectClick';
+import UseEffectScreenSize from './components/UseEffectScreenSize';
 
 import './App.css';
 import {Routes, Route, Link} from 'react-router-dom'; //must import in Index.js and add broswerrouter//
@@ -122,7 +127,12 @@ function App() {
           <FeedbackForm/>
           <RegistrationForm/>
           <UseState/>
+          <UseStateCounter/>
           <Goals/>
+          <StateWithAComponent/>
+          <UseEffectHook/>
+          <UseEffectClick/>
+          <UseEffectScreenSize/>
       </div>
     </div>
   );
