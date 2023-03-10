@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Header from './components/Header';
 import Main from './components/Main';
 import Sidebar from './components/Sidebar';
@@ -81,7 +81,7 @@ function App() {
         <ThemeSwitcher/>
         <div>
           {/* first method to import an image */}
-          <img height={200} src={rooftops} alt="image of cocobutter"/>
+          <img height={200} src={rooftops} alt="cocobutter"/>
           {/* second method to import an image */}
           <img height={200} src={require('./assets/images/cocobutter3.png')} alt="cocobutter3"/>
         </div>
