@@ -29,7 +29,7 @@ import Goals from './components/Goals';
 import './App.css';
 import {Routes, Route, Link} from 'react-router-dom'; //must import in Index.js and add broswerrouter//
 import ReactPlayer from 'react-player';
-import React from 'react';
+import React from 'react'; 
 
 function App() {
   const date= new Date()
