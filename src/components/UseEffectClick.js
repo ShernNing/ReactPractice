@@ -7,7 +7,7 @@ export default function UseEffectClick() {
     console.log('resource changed')
 
     return () => {
-      console.log('clear resource')
+      console.log('clean up code')
     }
 
 }, [resourceType])
